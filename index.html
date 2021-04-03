@@ -8,46 +8,46 @@
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
 
-<body>
+<body class="page">
   <div class="info">
-    <img src="./eisenhower-matrix.jpg">
+    <img src="./eisenhower-matrix.jpg" class="info-img">
     <a class="info-link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
   <div class="main">
     <div>
-      <label for="new-task">Add Item</label>
+      <label for="new-task" class="new-task-label">Add Item</label>
       <div class="task-row">
-        <input id="new-task" class="task" type="text">
-        <button>Add</button>
+        <input id="new-task" class="task add-task" type="text">
+        <button class="add">Add</button>
       </div>
     </div>
-    <h3>Todo</h3>
+    <h3 class="list-heading">Todo</h3>
     <ul id="incompleted">
-      <li>
-        <input type="checkbox">
+      <li class="list">
+        <input type="checkbox" class="action">
         <label class="task">Pay Bills</label>
-        <input type="text">
+        <input type="text" class="add-task task-input">
         <button class="edit">Edit</button>
         <button class="delete">
           <img src="./remove.svg">
         </button>
       </li>
-      <li class="edit-mode">
-        <input type="checkbox">
+      <li class="edit-mode list">
+        <input type="checkbox" class="action">
         <label class="task">Go Shopping</label>
-        <input type="text" value="Go Shopping" class="task">
+        <input type="text" value="Go Shopping" class="task add-task task-input">
         <button class="edit">Save</button>
         <button class="delete">
           <img src="./remove.svg">
         </button>
       </li>
     </ul>
-    <h3>Completed</h3>
+    <h3 class="list-heading">Completed</h3>
     <ul id="completed">
-      <li>
-        <input type="checkbox" checked>
+      <li class="list">
+        <input type="checkbox" checked class="action">
         <label class="task">See the Doctor</label>
-        <input type="text" class="task">
+        <input type="text" class="task add-task task-input">
         <button class="edit">Edit</button>
         <button class="delete">
           <img src="./remove.svg">
